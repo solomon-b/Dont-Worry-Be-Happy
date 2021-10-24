@@ -36,3 +36,13 @@ executable source-spans
     default-language: Haskell2010
     other-modules:    Lexer
                     , Parser
+
+executable error-handling
+    main-is:          Main.hs
+    build-depends:    base ^>=4.14.1.0
+                    , array
+    hs-source-dirs:   app/error-handling
+    default-language: Haskell2010
+    other-modules:    Error
+                    , Lexer
+                    , Parser
