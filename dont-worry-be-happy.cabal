@@ -1,0 +1,18 @@
+cabal-version:      2.4
+name:               dont-worry-be-happy
+version:            0.1.0.0
+synopsis:           Happy parsing examples
+bug-reports:        http://www.github.com/ssbothwell/dont-worry-be-happy
+license:
+author:             ssbothwell
+maintainer:         ssbothwell@gmail.com
+category:           Parsing
+
+executable arith
+    main-is:          Main.hs
+    build-depends:    base ^>=4.14.1.0
+                    , array
+    hs-source-dirs:   app/arith
+    default-language: Haskell2010
+    other-modules:    Lexer
+                    , Parser
