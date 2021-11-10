@@ -55,3 +55,21 @@ executable error-handling
     other-modules:    Error
                     , Lexer
                     , Parser
+
+executable monadic
+    main-is:          Main.hs
+    build-depends:    base ^>=4.14.1.0
+                    , array
+                    , bytestring
+                    , mtl
+                    , text
+                    , utf8-string
+    hs-source-dirs:   app/monadic
+    default-language: Haskell2010
+    other-modules:    Error
+                    , Parser
+                    , Parser.Lexer
+                    , Parser.Grammar
+                    , Parser.Monad
+                    , Parser.Spans
+                    , Parser.Token
